@@ -14,22 +14,22 @@ public class Hero {
     private Long id;
 
     @NotBlank
-    @Size(min = 3)
+    @Size(min = 3, max = 100)
     private String name;
 
     @NotBlank
-    @Size(min = 3)
+    @Size(min = 3, max = 100)
     private String codename;
 
     @NotNull
     private Integer age;
 
     @NotBlank
-    @Size(min = 3)
+    @Size(min = 3, max = 100)
     private String country;
 
     @NotBlank
-    @Size(min = 3)
+    @Size(min = 3, max = 100)
     private String team;
 
     public Hero() {
