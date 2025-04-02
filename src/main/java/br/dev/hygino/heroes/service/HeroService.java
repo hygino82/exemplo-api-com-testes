@@ -62,4 +62,8 @@ public class HeroService {
             throw new IllegalArgumentException("Não existe heroi com o id: " + id);
         }
     }
+
+    public void removeHero(Long id) {
+        repository.deleteById(id);
+    }
 }

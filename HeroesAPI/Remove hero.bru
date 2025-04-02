@@ -1,0 +1,11 @@
+meta {
+  name: Remove hero
+  type: http
+  seq: 6
+}
+
+delete {
+  url: {{HOST}}/hero/3
+  body: none
+  auth: inherit
+}
