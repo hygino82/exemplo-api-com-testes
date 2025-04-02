@@ -1,6 +1,7 @@
 package br.dev.hygino.heroes.dto;
 
 import br.dev.hygino.heroes.model.Hero;
+import java.io.Serializable;
 
 public record ResponseHeroDTO(
         Long id,
@@ -8,7 +9,7 @@ public record ResponseHeroDTO(
         String codename,
         Integer age,
         String country,
-        String team) {
+        String team) implements Serializable{
 
     public ResponseHeroDTO(Hero entity) {
         this(
