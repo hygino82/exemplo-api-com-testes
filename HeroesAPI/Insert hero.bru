@@ -1,0 +1,21 @@
+meta {
+  name: Insert hero
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{HOST}}/hero
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "Tony Stark",
+    "codename": "Ironman",
+    "age": 57,
+    "country": "USA",
+    "team": "Avengers"
+  }
+}

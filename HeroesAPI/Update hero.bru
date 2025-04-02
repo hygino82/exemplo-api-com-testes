@@ -1,0 +1,21 @@
+meta {
+  name: Update hero
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{HOST}}/hero/1
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "Tony Stark",
+    "codename": "Homen de Ferro",
+    "age": 61,
+    "country": "EUA",
+    "team": "Avengers"
+  }
+}
