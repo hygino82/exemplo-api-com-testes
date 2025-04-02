@@ -22,4 +22,12 @@ public class HeroService {
         final Page<Hero> page = repository.findAll(pageable);
         return page.map(ResponseHeroDTO::new);
     }
+
+    @Transactional(readOnly = true)
+    public ResponseHeroDTO findHeroById(Long id) {
+        Hero res = repository.findById(id)
+                .orElseThrow(() -> new IllegalArgumentException("Não existe heroi com o id: " + id));
+
+        return new ResponseHeroDTO(res);
+    }
 }
