@@ -1,15 +1,20 @@
 <div class="container">
-  <form>
+  <form (submit)="cadastrar($event)">
     <label for="name">Nome</label><br>
-    <input type="text" id="name" min="3" max="100" required><br>
+    <input type="text" id="name" name="name" required><br>
+
     <label for="codename">Codinome</label><br>
-    <input type="text" id="codename" min="3" max="100" required><br>
-    <label for="idade">Idade</label><br>
-    <input type="number" id="idade" required><br>
+    <input type="text" id="codename" name="codename" required><br>
+
+    <label for="age">Idade</label><br>
+    <input type="number" id="age" required><br>
+
     <label for="country">País</label><br>
-    <input type="text" id="country" min="3" max="100" required><br>
+    <input type="text" id="country" name="country" required><br>
+
     <label for="team">Equipe</label><br>
-    <input type="text" id="team" min="3" max="100" required><br>
-    <input type="submit" value="Cadastrar" class="btn btn-primary">
+    <input type="text" id="team" name="team" required><br>
+
+    <button type="submit" class="btn btn-primary">Cadastrar</button>
   </form>
 </div>
