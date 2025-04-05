@@ -5,7 +5,11 @@ meta {
 }
 
 get {
-  url: {{HOST}}/hero
+  url: {{HOST}}/hero?sort=name
   body: none
   auth: inherit
+}
+
+params:query {
+  sort: name
 }
