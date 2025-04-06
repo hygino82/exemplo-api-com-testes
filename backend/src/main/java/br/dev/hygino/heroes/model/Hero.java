@@ -35,7 +35,23 @@ public class Hero {
     public Hero() {
     }
 
-    public Long getId() {
+    public Hero(Long id, 
+    		@NotBlank @Size(min = 3, max = 100) String name,
+			@NotBlank @Size(min = 3, max = 100) String codename, 
+			@NotNull Integer age,
+			@NotBlank @Size(min = 3, max = 100) String country,
+			@NotBlank @Size(min = 3, max = 100) String team) {
+		this.id = id;
+		this.name = name;
+		this.codename = codename;
+		this.age = age;
+		this.country = country;
+		this.team = team;
+	}
+
+
+
+	public Long getId() {
         return id;
     }
 

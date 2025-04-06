@@ -2,6 +2,7 @@ package br.dev.hygino.heroes.factory;
 
 import br.dev.hygino.heroes.dto.RequestHeroDTO;
 import br.dev.hygino.heroes.dto.ResponseHeroDTO;
+import br.dev.hygino.heroes.model.Hero;
 
 public class HeroFactory {
 
@@ -11,5 +12,13 @@ public class HeroFactory {
 
 	public static RequestHeroDTO createRequestHeroDTO() {
 		return new RequestHeroDTO("John Stuart", "Green Lantern", 35, "USA", "Justice League");
+	}
+
+	public static Hero createHeroEntity() {
+		return new Hero(1L, "John Stuart", "Green Lantern", 35, "USA", "Justice League");
+	}
+
+	public static ResponseHeroDTO createInsertResponseHeroDTO() {
+		return new ResponseHeroDTO(1L, "John Stuart", "Green Lantern", 35, "USA", "Justice League");
 	}
 }
