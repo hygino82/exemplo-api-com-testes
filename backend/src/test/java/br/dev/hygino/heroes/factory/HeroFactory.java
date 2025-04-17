@@ -18,7 +18,17 @@ public class HeroFactory {
 		return new Hero(1L, "John Stuart", "Green Lantern", 35, "USA", "Justice League");
 	}
 
+	public static Hero createUpdatedHeroEntity() {
+		return new Hero(1L, "John Stuart Updated", "Green Lantern Updated", 99, "USA", "Justice League");
+	}
+
+	public static RequestHeroDTO createUpdatedRequestHeroDTO() {
+		return new RequestHeroDTO("John Stuart Updated", "Green Lantern Updated", 99, "USA", "Justice League");
+	}
+
 	public static ResponseHeroDTO createInsertResponseHeroDTO() {
 		return new ResponseHeroDTO(1L, "John Stuart", "Green Lantern", 35, "USA", "Justice League");
 	}
+
+
 }
