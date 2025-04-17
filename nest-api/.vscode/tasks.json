@@ -1,0 +1,16 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Nest Start Dev",
+      "type": "shell",
+      "command": "npm run start:dev",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": [],
+      "detail": "Roda NestJS em modo desenvolvimento (start:dev)"
+    }
+  ]
+}
